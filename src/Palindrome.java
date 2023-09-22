@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Palindrome {
@@ -34,7 +33,6 @@ public class Palindrome {
 
         return oddCount <= 1;
     }
-
 
     public static boolean isPalindrome2(String word) {
         int left = 0;
