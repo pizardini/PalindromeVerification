@@ -18,7 +18,7 @@ public class Palindrome {
         return reversed.equals(word);
     }
 
-    public static boolean anagrammPalindrome(String word) {
+    public static boolean anagramPalindrome(String word) {
         Map<Character, Integer> charCount = new HashMap<>();
 
         for (char c : word.toCharArray()) {
@@ -35,13 +35,6 @@ public class Palindrome {
         return oddCount <= 1;
     }
 
-    public int sumPalindromes(boolean word) {
-        int contador= 0;
-        if (word) {
-            contador++;
-        }
-        return contador;
-    }
 
     public static boolean isPalindrome2(String word) {
         int left = 0;

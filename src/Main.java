@@ -22,10 +22,20 @@ public class Main {
     }
 
     public int output(List<String> words) {
-
+    int contador = 0;
         for (String word : words) {
-            Palindrome.isPalindrome(word);
+            boolean case1 = Palindrome.isPalindrome(word);
+
+            if (case1) {
+                contador++;
+            }
+            else {
+                boolean case2 = Palindrome.anagramPalindrome(word);
+                if (case2) {
+                    contador++;
+                }
+            }
         }
-        return 0;
+        return contador;
     }
 }
