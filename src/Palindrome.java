@@ -34,7 +34,7 @@ public class Palindrome {
         return oddCount <= 1;
     }
 
-    public static boolean isPalindrome2(String word) {
+    public static boolean isPalindrome2(String word) { //alternative method to verify a palindrome
         int left = 0;
         int right = word.length() - 1;
 
